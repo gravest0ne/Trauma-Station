@@ -404,11 +404,11 @@
 
 - type: entity
   parent: BaseDemon
-  id: MediumDemonDemipede
-  name: Demipede
+  id: MediumDemonCentifiend
+  name: Centifiend
   components:
   - type: Sprite
-    sprite: _Trauma/Mobs/Monsters/Demons/demipede.rsi
+    sprite: _Trauma/Mobs/Monsters/Demons/centifiend.rsi
   - type: MeleeWeapon
     range: 1
     soundHit:
@@ -434,21 +434,21 @@
   - type: Solution
     id: melee
     solution:
-      maxVol: 13
+      maxVol: 10
   - type: SolutionRegeneration
     generated:
       reagents:
-      - ReagentId: MindbreakerToxin
+      - ReagentId: UnstableMutagen
         Quantity: 3
       - ReagentId: Mold
-        Quantity: 10
+        Quantity: 5
   - type: MeleeChemicalInjector
-    transferAmount: 15
+    transferAmount: 8
     solution: melee
 
 - type: entity
-  parent: [ControlledDemon, MediumDemonDemipede]
-  id: MediumDemonDemipedeControlled
+  parent: [ControlledDemon, MediumDemonCentifiend]
+  id: MediumDemonCentifiendControlled
   suffix: Controlled
 
 - type: entity
