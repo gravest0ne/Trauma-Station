@@ -415,7 +415,7 @@
       path: /Audio/Effects/demon_attack1.ogg
     damage:
       types:
-        Slash: 4
+        Piercing: 1
     altDisarm: true
     canWideSwing: false
   - type: Destructible
